@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Corona Virus Checker</string>
+    <string name="calculate">Calculate</string>
+    <string name="warningContent">You have symptoms of Corona Virus.Please contact the emergency in your country</string>
+    <string name="notificationContent">You have no symptoms of corona virus. Please avoid being in crowded places..</string>
+
+    <string name="fever">Fever</string>
+    <string name="tiredness">Tiredness</string>
+    <string name="dry_cough">Dry Cough</string>
+    <string name="hard_breath">Labored breathing</string>
+    <string name="cough">Cough</string>
+    <string name="pain">Soreness</string>
+    <string name="sneeze">Sneeze</string>
+    <string name="runny_nose">Runny Nose</string>
+    <string name="nose_congestion">Nose Congestion</string>
+    <string name="watery_eye">Watery Eye</string>
+    <string name="sore_throat">Sore Throat</string>
+    <string name="diarrhea">Diarrhea</string>
+
+
+    <string name="calculate_tr">Hesapla</string>
+
+    <string name="warningContent_tr">Korona virüs belirtileri taşıyorsunuz.Lütfen 184 ile iletişime geçiniz</string>
+
+    <string name="notificationContent_tr">Korona virüs belirtileri taşımıyorsunuz.Lütfen kalabalık ortamlardan uzak durun.</string>
+    <string name="fever_tr">Ateş</string>
+    <string name="tiredness_tr">Yorgunluk</string>
+    <string name="dry_cough_tr">Kuru Öksürük</string>
+    <string name="hard_breath_tr">Solunum Zorluğu</string>
+    <string name="cough_tr">Öksürük</string>
+    <string name="pain_tr">Ağrı</string>
+    <string name="sneeze_tr">Hapşurma</string>
+    <string name="runny_nose_tr">Burun Akıntısı</string>
+    <string name="nose_congestion_tr">Burun Tıkanıklığı</string>
+    <string name="watery_eye_tr">Gözde Sulanma</string>
+    <string name="sore_throat_tr">Boğaz Ağrısı</string>
+    <string name="diarrhea_tr">İshal</string>
+    <string-array name="frequency">
+        <item>None</item>
+        <item>Barely</item>
+        <item>Sometimes</item>
+        <item>Often</item>
+        <item>Constantly</item>
+    </string-array>
+    <string-array name="rates">
+        <item>0</item>
+        <item>2</item>
+        <item>5</item>
+        <item>12</item>
+        <item>20</item>
+    </string-array>
+
+
+    <string-array name="frequency_tr">
+        <item>Yok</item>
+        <item>Nadiren</item>
+        <item>Bazen</item>
+        <item>Sık Sık</item>
+        <item>Şiddetli</item>
+    </string-array>
+
+    <string-array name="rates_tr">
+        <item>0</item>
+        <item>2</item>
+        <item>5</item>
+        <item>12</item>
+        <item>20</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/iv_scroll"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/scroll"
+                android:layout_margin="10dp"
+                android:layout_gravity="bottom|end" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/heat"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/tiredness"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/dry_cough"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/hard_breathe"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/cough"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/pain"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/sneezing"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/runny_nose"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/nose_congestion"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/watery_eye"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/throath_ache"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/diarrhea"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_fever"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/fever"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_tiredness"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/tiredness"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_dry_cough"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/dry_cough"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_breath"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/hard_breath"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_cough"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/cough"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_soreness"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/pain"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_sneeze"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/sneeze"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_runny_nose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/runny_nose"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_nose_congestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/nose_congestion"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_eye"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/watery_eye"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_sore_throat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/sore_throat"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_diarrhea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/diarrhea"
+                             android:textSize="18sp"
+                            android:fontFamily="@font/varelaround_regular"
+                            android:textColor="@color/LightBlack"
+                            android:layout_marginRight="20dp"/>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/sp_heat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_tiredness"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_dry_cough"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_hard_breath"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_cough"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_pain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_sneeze"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_runny_nose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_nose_congestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_watery_eye"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_throat_ache"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                        <Spinner
+                            android:id="@+id/sp_diarrhea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="28sp"
+                            android:tooltipText="asdasd"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/Blue"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/tv_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:fontFamily="@font/varelaround_regular"
+                android:textColor="@color/White"
+                android:text="@string/calculate"
+                android:layout_marginVertical="10dp"
+                android:layout_alignParentBottom="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4049974656278684/3369877871"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

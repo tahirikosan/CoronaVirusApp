@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corona_virus"
+    tools:context=".CoronaActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_corona_1"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/corona"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"/>
+
+    <ImageView
+        android:id="@+id/iv_corona_2"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/corona"
+        android:layout_marginTop="150dp" />
+
+    <ImageView
+        android:id="@+id/iv_corona_3"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/corona"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/DarkRed"
+        app:cardCornerRadius="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_warning_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varelaround_regular"
+            android:layout_margin="10dp"
+            android:textColor="@color/White"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:text="@string/warningContent" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
